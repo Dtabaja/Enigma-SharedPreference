@@ -39,6 +39,9 @@ Step 3. Add your class in the manifest:
 
 <img src="https://github.com/Dtabaja/Enigma-SharedPreference/blob/master/manifest.JPG" width="600">
 
+## Functions
+
+
 
 
 ## Credits
