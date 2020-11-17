@@ -2,6 +2,11 @@
 [![](https://jitpack.io/v/Dtabaja/Enigma-SharedPreference.svg)](https://jitpack.io/#Dtabaja/Enigma-SharedPreference)
 
 
+<img src="https://github.com/Dtabaja/Enigma-SharedPreference/blob/master/enigma3.jpg" width="500">
+
+
+
+
 Enigma is a library that encrypt your Shared Sreference with 256AES Encryption.
 
 ## Setup
