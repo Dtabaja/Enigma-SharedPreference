@@ -31,4 +31,4 @@ dependencies {
 
 ## Credits
 
-picture: https://wordpandit.com/, https://pluviolover.com/2016/10/07/are-you-an-enigma/
+Enigma picture: https://wordpandit.com/, https://pluviolover.com/2016/10/07/are-you-an-enigma/
