@@ -1,0 +1,3 @@
+include ':Enigma_SharedPreference'
+include ':app'
+rootProject.name = "Enigma"
