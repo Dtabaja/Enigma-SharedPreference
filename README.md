@@ -27,6 +27,18 @@ dependencies {
 }
 ```
 ## Usage
+Step 1. open a new class: 
+
+<img src="https://github.com/Dtabaja/Enigma-SharedPreference/blob/master/Application2.JPG" width="600">
+
+Step 2. implement the initHelper Function:
+
+<img src="https://github.com/Dtabaja/Enigma-SharedPreference/blob/master/Application.JPG" width="600">
+
+Step 3. Add your class in the manifest:
+
+<img src="https://github.com/Dtabaja/Enigma-SharedPreference/blob/master/manifest.JPG" width="600">
+
 
 
 ## Credits
