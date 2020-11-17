@@ -29,7 +29,7 @@ dependencies {
 ## Usage
 Step 1. open a new class: 
 
-<img src="https://github.com/Dtabaja/Enigma-SharedPreference/blob/master/Application2.JPG" width="600">
+<img src="https://github.com/Dtabaja/Enigma-SharedPreference/blob/master/Application2.JPG" width="500">
 
 Step 2. implement the initHelper Function:
 
