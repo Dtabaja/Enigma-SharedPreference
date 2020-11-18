@@ -28,6 +28,8 @@ public class Enigma {
     private static final long DEFAULT_LONG_VAL = -1L;
     private static final double DEFAULT_DOUBLE_VAL = 0.0;
     private static final String DEFAULT_STRING_VAL = "";
+    private static final Set<String> DEFAULT_STRINGSET_VAL = null;
+
 
     private Enigma(Context context) {
         try {
@@ -171,8 +173,28 @@ public class Enigma {
      * @param key          of the String value that is going to be retrieved
      * @param defaultValue in case that the key is not stored
      */
-    private String getString(String key, String defaultValue) {
+    public String getString(String key, String defaultValue) {
         return sharedPreferences.getString(key, defaultValue);
+    }
+
+    /**
+     * use this to retrieve StringSet values
+     *
+     * @param key of the StringSet value that is going to be retrieved
+     */
+    public Set<String> getStringSet(String key) {
+        return sharedPreferences.getStringSet(key, DEFAULT_STRINGSET_VAL);
+    }
+
+    /**
+     * use this to retrieve StringSet values
+     *
+     * @param key          of the StringSet value that is going to be retrieved
+     * @param defaultValue in case that the key is not stored
+     */
+
+    public Set<String> getStringSet(String key, Set<String> defaultValue) {
+        return sharedPreferences.getStringSet(key, defaultValue);
     }
 
     /**
@@ -203,16 +225,7 @@ public class Enigma {
         return gson.fromJson(json, type);
     }
 
-    /**
-     * use this to retrieve StringSet values
-     *
-     * @param key          of the StringSet value that is going to be retrieved
-     * @param defaultValue in case that the key is not stored
-     */
 
-    private Set<String> getStringSet(String key, Set<String> defaultValue) {
-        return sharedPreferences.getStringSet(key, defaultValue);
-    }
 
     /**
      * use this to retrieve all Shared Preference values in storage
@@ -232,7 +245,7 @@ public class Enigma {
     }
 
     /**
-     * use this to store Boolean values Synchronized
+     * use this to store Boolean values and retrieve true/false if succeed.
      *
      * @param key   of the Boolean value that is going to be stored
      * @param value you want to store
@@ -252,7 +265,7 @@ public class Enigma {
     }
 
     /**
-     * use this to store float values Synchronized.
+     * use this to store float values and retrieve true/false if succeed.
      *
      * @param key   of the float value that is going to be stored
      * @param value you want to store
@@ -272,7 +285,7 @@ public class Enigma {
     }
 
     /**
-     * use this to store Integer values Synchronized.
+     * use this to store Integer values and retrieve true/false if succeed.
      *
      * @param key   of the Integer value that is going to be stored
      * @param value you want to store
@@ -292,7 +305,7 @@ public class Enigma {
     }
 
     /**
-     * use this to store Long values Synchronized.
+     * use this to store Long values and retrieve true/false if succeed.
      *
      * @param key   of the Long value that is going to be stored
      * @param value you want to store
@@ -312,7 +325,7 @@ public class Enigma {
     }
 
     /**
-     * use this to store Double values Synchronized.
+     * use this to store Double values and retrieve true/false if succeed.
      *
      * @param key   of the Double value that is going to be stored
      * @param value you want to store
@@ -332,7 +345,7 @@ public class Enigma {
     }
 
     /**
-     * use this to store String values Synchronized.
+     * use this to store String values and retrieve true/false if succeed.
      *
      * @param key   of the String value that is going to be stored
      * @param value you want to store
@@ -352,7 +365,7 @@ public class Enigma {
     }
 
     /**
-     * use this to store StringSet values Synchronized.
+     * use this to store StringSet values and retrieve true/false if succeed.
      *
      * @param key   of the StringSet value that is going to be stored
      * @param value you want to store
@@ -375,16 +388,16 @@ public class Enigma {
     }
 
     /**
-     * use this to store ArrayList values Synchronized.
+     * use this to store ArrayList values and retrieve true/false if succeed.
      *
      * @param key   of the ArrayList value that is going to be stored
      * @param value you want to store
      */
-    public void putArrayListSync(String key, ArrayList value) {
+    public boolean putArrayListSync(String key, ArrayList value) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         Gson gson = new Gson();
         String json = gson.toJson(value);
-        editor.putString(key, json).commit();
+        return editor.putString(key, json).commit();
     }
 
     /**
@@ -401,16 +414,16 @@ public class Enigma {
     }
 
     /**
-     * use this to store HashMap values Synchronized.
+     * use this to store HashMap values and retrieve true/false if succeed.
      *
      * @param key   of the ArrayList value that is going to be stored
      * @param value you want to store
      */
-    public void putHashMapSync(String key, HashMap<String, ?> value) {
+    public boolean putHashMapSync(String key, HashMap<String, ?> value) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         Gson gson = new Gson();
         String json = gson.toJson(value);
-        editor.putString(key, json).commit();
+        return editor.putString(key, json).commit();
     }
 
     /**
