@@ -5,14 +5,6 @@
 <img src="https://github.com/Dtabaja/Enigma-SharedPreference/blob/master/enigma3.jpg" width="500">
 
 
-**`putInt(key, value, type)`**
-
-store Int values.<br/>
-```Java
-dolly.putInt("Age", 23, Type.ENCRYPT);
-dolly.putInt("Age", 20, Type.NOT_ENCRYPT);
-```
-
 Enigma is a library that encrypt your Shared Sreference with 256AES Encryption.
 
 ## Setup
@@ -47,6 +39,8 @@ Step 3. Add your class in the manifest:
 
 ## Functions
 
+
+
 **` `**
 **`Store an Integer value`**
 ```Java
@@ -64,6 +58,8 @@ Enigma.getInstance().getInt("6");
 Enigma.getInstance().getInt("7",7);
 ```	
 
+
+
 **`Store an Double value`**
 ```Java
 Enigma.getInstance().putDouble("1.4", 2.87);
@@ -74,6 +70,9 @@ Enigma.getInstance().putDoubleSync("1.4", 2.87);
 ```Java
 Enigma.getInstance().getDouble("1.4");
 ```	
+
+
+
 
 
 **`Store a Boolean Value`**
@@ -91,6 +90,9 @@ Enigma.getInstance().getBoolean("office");
 ```Java
 Enigma.getInstance().getBoolean("office", false);
 ```	
+
+
+
 
 
 **`Store a Float Value`**
@@ -112,6 +114,8 @@ Enigma.getInstance().getFloat("1.8",1.8f);
 
 
 
+
+
 **`Store a String Value`**
 ```Java
 Enigma.getInstance().putString("name", "daniel");
@@ -127,6 +131,8 @@ Enigma.getInstance().getString("name");
 ```Java
 Enigma.getInstance().getString("name","avraham");
 ```	
+
+
 
 
 
@@ -147,7 +153,9 @@ Enigma.getInstance().getStringSet("club",defulat);
 ```	
 
 	
-	
+
+
+
 **`Store a HashMap Values`**
 ```Java
 Enigma.getInstance().putHashMap("cities", capitalCities);
@@ -158,6 +166,8 @@ Enigma.getInstance().putHashMapSync("cities", capitalCities);
 ```Java
 Enigma.getInstance().getHashMap("cities");
 ```	
+
+
 
 
 
@@ -174,11 +184,16 @@ Enigma.getInstance().getArrayList("Stam");
 
 	
 
+
+
 **`retrieve ALL the key:value that are in the Shared Preference`**
 ```Java
 Enigma.getInstance().getAll();
 ```	
-	
+
+
+
+
 
 **`Removes All the key:value in the Shared Preference`**
 ```Java
@@ -188,6 +203,8 @@ Enigma.getInstance().removeAllSync();
 
 	
 
+
+
 **`Giving a key, removes the value`**
 ```Java
 Enigma.getInstance().remove("cities");
@@ -196,10 +213,15 @@ Enigma.getInstance().removeSync("cities");
 
 	
 
+
+
 **`Giving a key, retrieve true/false if the value in the Shared Preference`**
 ```Java
 Enigma.getInstance().contains("cities");
 ```
+
+
+
 
 
 ## Credits
