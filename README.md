@@ -1,5 +1,7 @@
 # Enigma - SharedPreference
 [![](https://jitpack.io/v/Dtabaja/Enigma-SharedPreference.svg)](https://jitpack.io/#Dtabaja/Enigma-SharedPreference)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 
 
 <img src="https://github.com/Dtabaja/Enigma-SharedPreference/blob/master/enigma3.jpg" width="500">
